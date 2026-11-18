@@ -1,4 +1,4 @@
-# tabfms
+# pfn-from-scratch
 
 A ground-up study of tabular foundation models (PFN-style in-context learners), done in
 passes rather than one deep sweep. The aim is to understand them well enough to fine-tune
