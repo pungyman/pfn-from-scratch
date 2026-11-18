@@ -48,4 +48,10 @@ Revisit Pass 2 briefly after Pass 3.
 - [When Does Depth Help? Layerwise inference in TabFMs](https://arxiv.org/pdf/2610.19814)
 - [The Current Generation of TabFMs: A Critical Review](https://shdl.mmu.edu.my/16575/)
 
-`notes/` holds derivations and reading notes.
+## How we study
+
+Problems first. Each topic gets a problem set in `problems/`: derivations, predictions
+made before running code, builds, explain-backs, and plausible claims to find the flaw
+in. Attempts come before answers. Settled solutions go in `solutions/`, mistakes worth
+remembering in `notes/misconceptions.md`, and other derivations and reading notes in
+`notes/`.
