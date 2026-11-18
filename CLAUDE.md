@@ -24,6 +24,10 @@ Understanding comes from solving problems, not from reading explanations. So:
 - **Record what stuck and what didn't.** Once a problem is settled, the worked solution
   goes in `solutions/` and any misconception goes in `notes/misconceptions.md`.
   Revisit those misconceptions at the start of the next pass.
+- **Reading notes** follow `notes/_template.md`. Keep the user's conclusions separate from
+  the author's, and say when a source was only partly read or known only through a
+  summary.
+- **Connections** between ideas go in `notes/connections.md` as hypotheses to work through.
 
 ## Rules
 

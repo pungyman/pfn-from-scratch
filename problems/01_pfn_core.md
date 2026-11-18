@@ -36,6 +36,13 @@ fails.
 (c) Notice that nothing in (a) required computing a posterior. Where did the Bayesian
 inference "go"?
 
+(d) The KL in (a) is KL(p ‖ q), not KL(q ‖ p). On a small example, say a bimodal p over
+five categories and a q that can only put its weight in one block, compute both
+directions for a q covering one mode and for a q spread across both. Write out the
+expectation each direction takes. Which q does the PFN loss prefer? What does that
+predict about a PFN's predictive when the true posterior is multimodal but the model
+lacks the capacity to represent it?
+
 ### 3. Wrong prior ★★ (predict)
 
 A PFN is pretrained on a GP prior with a *fixed* RBF lengthscale of 1.0. You show it a

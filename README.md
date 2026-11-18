@@ -42,11 +42,26 @@ Revisit Pass 2 briefly after Pass 3.
 
 ## Reading
 
-- [TabPFN-2.5 report](https://alphaxiv.org/abs/2511.08667)
-- [TabPFN-3 model card](https://huggingface.co/Prior-Labs/tabpfn_3) (technical report: arXiv 2605.13986)
-- [Exploring Fine-Tuning for Tabular Foundation Models](https://arxiv.org/abs/2601.09654v1)
-- [When Does Depth Help? Layerwise inference in TabFMs](https://arxiv.org/pdf/2610.19814)
-- [The Current Generation of TabFMs: A Critical Review](https://shdl.mmu.edu.my/16575/)
+Each reading has one question to carry: hold it while reading, and answer it in the
+reading note (`notes/_template.md`).
+
+| Pass | Reading | Question to carry |
+| --- | --- | --- |
+| 0 | Müller et al. 2022, *Transformers Can Do Bayesian Inference* | Where exactly does the prior enter, and could you change it without retraining? |
+| 0 | Hollmann et al. 2025, TabPFN v2 (Nature) | Which design choices exist for accuracy, and which only to make large tables fit in memory? |
+| 1 | Rasmussen & Williams, *GPML* ch. 2 | What does the GP posterior mean need that a weighted average of labels cannot give? |
+| 1 | MacKay, *Information Theory, Inference, and Learning Algorithms*, KL and inference chapters | Which direction of KL does maximum likelihood minimise, and what does that do to the fitted distribution? |
+| 2 | Lee et al. 2019, *Set Transformer* | What do inducing points give up, and where does that loss show? |
+| 2 | Qu et al. 2025, TabICL | Why can the expensive row-to-row stage ignore how many features there are? |
+| 2 | [TabPFN-2.5 report](https://alphaxiv.org/abs/2511.08667) | What changed from v2, and which change matters most for large n? |
+| 2 | TabPFN-3 report (arXiv 2605.13986; [model card](https://huggingface.co/Prior-Labs/tabpfn_3)) | Which pieces are borrowed from TabICL, and which are new? |
+| 2 | *How to Scale Your Model*; FlashAttention | Where does memory, not FLOPs, set the largest context a model can take? |
+| 4 | [Exploring Fine-Tuning for TabFMs](https://arxiv.org/abs/2601.09654v1) | Why would full fine-tuning hurt a model that is already Bayes-optimal under its prior? |
+| 5 | [When Does Depth Help?](https://arxiv.org/pdf/2610.19814) | What does each layer add to the prediction, and could you stop early? |
+| — | [The Current Generation of TabFMs: A Critical Review](https://shdl.mmu.edu.my/16575/) | Which claimed advantages survive a change in the data-generating process? |
+
+What counts as progress: a worked derivation, a counterexample, a reproducible result,
+or a synthesis in your own words. Not a completion percentage or a chapter summary.
 
 ## How we study
 
